@@ -1,0 +1,141 @@
+body{
+    height: 10000px;
+    margin-top: 0px;
+    background-color: #622aff;
+    font-family: "Kemco pixel", sans-serif;
+}
+@font-face {
+    font-family: 'Kemco pixel';
+    src: url('Kemco.ttf') format('woff2'), /* Modern Browsers */
+         url('Kemco.ttf') format('woff');   /* Legacy Browsers */
+}
+.header{
+    display: flex;   /* row */
+    justify-content: center; /* horizontal */
+    align-items: center;  /* vertical */
+    position: sticky;
+    top: 0px;
+    height: 65px;
+    margin-left: -8px;
+    margin-right: -12px;
+    background-color: #28248c;
+    margin-bottom: 20px;
+    z-index: 999;
+}
+
+
+#input{
+    color: white;
+    width: 300px;
+    height: 38px;
+    background-color: #314d6e;
+    border-style: none;
+    border:none;
+    font-family: "Kemco pixel", sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    clip-path: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+    box-shadow: /* bottom right */ inset -4px -4px 0px rgba(0, 0, 0, 0.2), /* top left */ inset 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+#input:focus{
+    border-style: none;
+    outline: none;
+    color: white;
+}
+
+#view{
+    width: 80px;
+    cursor: pointer;
+    color: #28248C;
+    background: #E3FF37;
+    border: none;
+    font-family: "Kemco pixel", sans-serif;
+    height: 40px;
+    font-size: 16px;
+    clip-path: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+    box-shadow: /* bottom right */ inset -4px -4px 0px rgba(0, 0, 0, 0.2), /* top left */ inset 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+#random{
+    margin-left: 200px;
+    width: 150px;
+    cursor: pointer;
+    color: #28248C;
+    background: #E3FF37;
+    border: none;
+    font-family: "Kemco pixel", sans-serif;
+    height: 40px;
+    font-size: 16px;
+    clip-path: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+    box-shadow: /* bottom right */ inset -4px -4px 0px rgba(0, 0, 0, 0.2), /* top left */ inset 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+#delete_all{
+    margin-left: 15px;
+    width: 200px;
+    cursor: pointer;
+    color: #28248C;
+    background: #E3FF37;
+    border: none;
+    font-family: "Kemco pixel", sans-serif;
+    height: 40px;
+    font-size: 16px;
+    clip-path: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+    box-shadow: /* bottom right */ inset -4px -4px 0px rgba(0, 0, 0, 0.2), /* top left */ inset 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 50px;
+}
+.land_frame{
+    position: relative;
+}
+.land{
+    width: 520px;
+    height: 500px;
+}
+
+.bottom_options{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.previous{
+    cursor: pointer;
+    color: #28248C;
+    background: #E3FF37;
+    border: none;
+    font-family: "Kemco pixel", sans-serif;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    clip-path: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+    box-shadow: /* bottom right */ inset -4px -4px 0px rgba(0, 0, 0, 0.2), /* top left */ inset 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+.next{
+    margin-left:5px;
+    cursor: pointer;
+    color: #28248C;
+    background: #E3FF37;
+    border: none;
+    font-family: "Kemco pixel", sans-serif;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    clip-path: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+    box-shadow: /* bottom right */ inset -4px -4px 0px rgba(0, 0, 0, 0.2), /* top left */ inset 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+.land_name{
+    color: white;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.525);
+    width: 218px;
+    font-size: 14px;
+}
+
+.fa-xmark{
+    color: red;
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    cursor: pointer;
+}
