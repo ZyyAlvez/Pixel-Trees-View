@@ -1,3 +1,3 @@
 to check the website:
 
-https://zyytheprogrammer.github.io/Pixel-Trees-View/
+https://zyyalvez.github.io/Pixel-Trees-View/
